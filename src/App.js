@@ -9,6 +9,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Photos from "./pages/Photos";
 import Nav from "./components/Nav";
+import Message from "./components/Message";
 
 function App() {
     useEffect(() => {
@@ -24,6 +25,7 @@ function App() {
                 <Route path={"/video"} element={<Video />} />
                 <Route path={"/contact"} element={<Contact />} />
             </Routes>
+            <Message />
             <Footer />
         </BrowserRouter>
     );
